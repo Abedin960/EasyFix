@@ -4,8 +4,8 @@
 }
 
 .hero-img {
-    width: 60%;      
-    max-width: 600px; 
+    width: 90%;      
+    max-width: 1000px; 
     height: auto;    
     margin: 0 auto;  
     display: block;
@@ -15,4 +15,37 @@
     position: relative;
     margin-top: 20px; 
     color: black;     
+}
+
+
+.cta {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-align: center;
+}
+
+.btn-cta {
+    display: inline-block;
+    background: #0078D7; 
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: background 0.15s ease, transform 0.12s ease;
+}
+.btn-cta:hover {
+    background: #005fa3;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 420px) {
+    .btn-cta {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
 }
